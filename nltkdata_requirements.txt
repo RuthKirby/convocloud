@@ -1,0 +1,5 @@
+corpora
+	stopwords
+	wordnet
+tokenizers
+	punkt

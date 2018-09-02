@@ -1,0 +1,58 @@
+{% extends "bootstrap/base.html" %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    {% block title %}ConvoCloud{% endblock %}
+
+    {% block styles %}
+    {{ super() }}
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.css" rel="stylesheet"/>
+    <link href="static/css/base.css" rel="stylesheet"/>
+    {% endblock %}
+
+    {% block scripts %}
+    {{ super() }}
+    <script data-main="static/js/config" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+    <script>
+    require(['config'], function() {
+      require(['main']);
+    });
+    </script>
+    {% endblock %}
+  </head>
+  <body>
+        
+  {% block content %}
+  <h1 class="text-center header">ConvoCloud</h1>
+
+  <div id="alertBoxOn" class="container">
+    <div class="alert alert-success lead">
+      <strong>ConvoCloud is on!</strong> Start speaking to generate a cloud.
+    </div>
+  </div>
+  <div id="alertBoxOff" class="container">
+    <div class="alert alert-danger lead">
+      <strong>ConvoCloud is off!</strong> Press start to begin.
+    </div>
+  </div>
+  <div id="alertBoxClear" class="container">
+    <div class="alert alert-warning lead">
+      <strong>ConvoCloud has been cleared!</strong> 
+    </div>
+  </div>
+  
+  <div class="container">
+    <div id="buttonholder"  class="row text-center">
+        <button type="button" id="startbutton" class="btn btn-lg btn-success"><i class="fas fa-microphone"></i> Start</button>
+        <button type="button" id="stopbutton" class="btn btn-lg btn-danger">Stop</button>
+        <button type="button" id="clearbutton" class="btn btn-lg btn-warning">Clear</button>
+    </div>
+ </div>
+
+  <div id="wordcloud"></div>
+  
+  {% endblock %}  
+  </body>
+</html>
