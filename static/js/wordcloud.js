@@ -21,11 +21,11 @@ define([
 
     wordcloud.updateCloud = function() {
         $('#wordcloud').jQCloud('update', word_array);
+        console.log(word_array);
     }
 
     wordcloud.updateWordList = function(newWords) {
         word_array.push(newWords)
-        console.log(word_array)
     }
 
     wordcloud.clearCloud = function() {
