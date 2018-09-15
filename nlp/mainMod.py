@@ -38,7 +38,10 @@ def processText(line):
 
 def make_json(words):
     """
-    Makes the format ready for the Javascript Wordcloud.
+    Makes the syntax ready for the Javascript Wordcloud.
+
+    @param List: Word/score tuples
+    @return: List of text/weight dictionary tuples that are Javascript ready
     """
     dict_list = [{'text': word, 'weight': score} for word, score in words]
     return dict_list
@@ -46,6 +49,4 @@ def make_json(words):
 """
 if __name__ == '__main__':
     processText()
-
 """
-
