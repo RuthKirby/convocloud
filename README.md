@@ -2,6 +2,10 @@
 
 ConvoCloud is an app that provides a real-time visualisation of the semantic content of spoken language. It achieves this by integrating the technologies of Automatic Speech Recognition, Natural Language Processing and Word Cloud generation.
 
+# Compatability & Demo
+
+This first version currently runs in Google Chrome Desktop. An alpha demo can be tried out [here](http://convocloud.dapper17.com).
+
 # Use Cases
 
 With fixes and additions it could possibly be used by those with hearing impairments as an assistive tool for capturing the topics of a spoken conversation. Other possible use cases include lectures, meetings and other scenarios where a semantic summary of what is being said would be useful. 
@@ -28,8 +32,8 @@ To capture speech input for the cloud the [Web Speech API](https://developer.moz
 
 ## Natural Language Processing
 
-The python scripts that process the raw speech input and create semantically useful tokens for visualisation make use of the [Natural Language Toolkit](https://www.nltk.org/).
+The python scripts that process the raw speech input and create semantically useful tokens for visualisation make use of the [Natural Language Toolkit](https://www.nltk.org/). This includes: tokenisation, removal of stop words and swear words and lemmatisation.
 
 ## Word Cloud Generation
 
-The bright and beautiful word clouds are rendered using [JQcloud](http://mistic100.github.io/jQCloud/). 
+The bright and beautiful word clouds are rendered using the [JQcloud](http://mistic100.github.io/jQCloud/) library. 
