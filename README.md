@@ -4,7 +4,7 @@ ConvoCloud is an app that provides a real-time visualisation of the semantic con
 
 # Compatability & Demo
 
-This first version currently runs in Google Chrome Desktop. An alpha demo visualising spoken language in English can be tried out [here](http://convocloud.dapper17.com).
+This first version currently runs in Google Chrome Desktop.
 
 # Use Cases
 
